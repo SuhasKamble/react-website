@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.max-width {
+  max-width: 1200px;
+  margin: auto;
+}
+.navbar {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: lightblue; */
+  z-index: 100;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  list-style: none;
+  margin-right: 1.5rem;
+}
+.links {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+}
+
+.links-btn {
+  padding: 12px 30px;
+  background: #1a6c7a;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.home {
+  height: 100vh;
+  background: url("https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/landscape-mountains-sky-4843193.jpg")
+    no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+  background-image: radial-gradient(at center center, #153243 0%, #1a6c7a 100%);
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  /* background: chocolate; */
+}
+
+.home-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.home-text h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+}
+.home-text h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+}
+.home-text p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.btn-container {
+  margin-top: 4rem;
+}
+
+.btn-service,
+.btn-about {
+  padding: 1rem 3rem;
+  margin: 0 1rem;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  text-decoration: none;
+}
+.btn-service {
+  border: 1px solid #fff;
+  background: transparent;
+  color: white;
+}
+.btn-about {
+  background: white;
+  color: #81a59c;
+}
+
+.btn-service:hover {
+  background: #1a6c7a;
+  border: 1px solid #1a6c7a;
+}
+.btn-about:hover {
+  color: white;
+  background: #1a6c7a;
+}
+
+.service {
+}
+
+.service-heading {
+  background: url("https://cdn.pixabay.com/photo/2014/08/01/00/08/pier-407252_1280.jpg")
+    no-repeat center center/cover;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  z-index: ;
+}
+
+.service-heading h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+}
+
+.card {
+  height: 400px;
+  width: 350px;
+
+  border: 1px solid black;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.card-img img {
+  height: 100%;
+  width: 100%;
+}
+.card-body {
+  padding: 0.5rem;
+}
+
+.card-body h3 {
+  margin-bottom: 10px;
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-container {
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.contact-container h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  /* background: lightblue; */
+  width: 70%;
+}
+.contact-container form input,
+.contact-container form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: rgb(233, 233, 233);
+  outline: none;
+  border: none;
+  margin-top: 4px;
+  font-size: 16px;
+}
+.form-control {
+  margin-bottom: 1rem;
+}
+.form-control label {
+  margin-bottom: 5px !important;
+}
+
+.contact-container form input:focus,
+.contact-container form textarea:focus {
+  border: 2px solid black;
+}
+
+.submit-btn {
+  padding: 14px 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background: #1a6c7a;
+  color: white;
+  cursor: pointer;
+}
+
+.burger {
+  background: lightseagreen;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  display: none;
+}
+.fas {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 780px) {
+  .navLinks {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    background-color: #2bcbba;
+    width: 100%;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .navLinks.show {
+    left: 0;
+  }
+  .burger {
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+  }
+  .home-text {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .home-text h3 {
+    font-size: 1.7rem;
+  }
+  .home-text h1 {
+    font-size: 3rem;
+  }
+  .btn-about,
+  .btn-service {
+    padding: 14px 30px;
+  }
+  .navbar img {
+    height: 40px;
+    margin-left: 5px;
+  }
+  .service-heading h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-container {
+    padding: 0 10px;
+  }
+  .contact-container form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
